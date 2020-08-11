@@ -20,7 +20,7 @@ from selenium.common.exceptions import WebDriverException
 
 def send(msg):
 
-    '''Función para enviar mensaje a bot de telegram '''
+    '''Función para enviar mensaje a bot de telegram'''
 
     token = "XXX:YYY" # Colocar token de bot personal
     chat_id = "000000" # Colocar ID de chat
@@ -94,7 +94,7 @@ if internet() is True:
 
     TEXT_1, TEXT_2 = status_pack()
 
-    if TEXT_1 != DIC_1 and TEXT_2 != DIC_2:
+    if TEXT_1 != DIC_1 or TEXT_2 != DIC_2:
 
         try:
             send(TEXT_1)
